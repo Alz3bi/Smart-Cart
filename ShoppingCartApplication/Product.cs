@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace ShoppingCartApplication
 {
-    internal class Product
+    public enum ProductCategory
     {
+        Food,
+        Clothing,
+        Electronics,
+        Furniture
+    }
+    public class Product
+    {
+        public string? Name { get; set; }
+        public double Price { get; set; }
+        public ProductCategory Category { get; set; }
+
     }
 }
